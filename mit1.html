@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <title>Project X</title>
+</head>
+<body>
+  <div class="header">
+      <img src="obrazky/logo_sps.png" alt="Logo školy" height="50" width="50" align="left">
+      <h1 class="hlavickaText">Střední průmyslová škola Česká Lípa - Maturita</h1>
+  </div>
+
+  <div class="topnav">
+    <a class="active" href="main.html"><i class="fa fa-home"></i></a>
+    <a href="cj.html">ČJ</a>
+    <a href="cjr.html">ČJ - Rozbory</a>
+    <a href="mat.html">MAT</a>
+    <a href="mit.html">MIT</a>
+    <a href="asw.html">ASW</a>
+    <a href="ops.html">OPS</a>
+    <a href="pos.html">POS</a>
+    <a href="prg.html">PRG</a>
+    <a href="prg.html">AJ</a>
+  </div>
+
+  <div class="sidenav">
+      <a href="mit1.html">Polovodiče 1</a>
+      <a href="mit2.html">Polovodiče 2</a>
+      <a href="mit3.html">Napájecí zdroje</a>
+      <a href="mit4.html">Zesilovače</a>
+      <a href="mit5.html">Operační zesilovače</a>
+      <a href="mit6.html">Oscilátory a klopné obvody</a>
+      <a href="mit7.html">Tvarovací obvody</a>
+      <a href="mit8.html">A/D a D/A převodníky</a>
+      <a href="mit9.html">Měřící přístroje</a>
+      <a href="mit10.html">Číslicové měřící přístroje</a>
+      <a href="mit11.html">Osciloskopy</a>
+      <a href="mit12.html">Teoretické modely počítačů</a>
+      <a href="mit13.html">Hardware PC</a>
+      <a href="mit14.html">Výstupní zařízení PC</a>
+      <a href="mit15.html">Číselné soustavy</a>
+      <a href="mit16.html">Booleova algebra, minimalizace funkcí</a>
+      <a href="mit17.html">Kombinační logické obvody</a>
+      <a href="mit18.html">Sekvenční logické obvody</a>
+      <a href="mit19.html">Mikroprocesory</a>
+      <a href="mit20.html">Paměti</a>
+      <a href="mit21.html">Paralerní rozhraní</a>
+      <a href="mit22.html">Seriová komunikace</a>
+      <a href="mit23.html">Měření času a frekvence</a>
+      <a href="mit24.html">Mikrořadiče a jednočipové počítače</a>
+      <a href="mit25.html">Programování v JSA</a>
+      <a href="mit26.html">Obecné požadavky</a>
+  </div>
+
+  <div class="content">
+    <h1>1 - Polovodiče 1</h1>
+
+    <h3>Polovodiče</h3>
+    <ul>
+      <li>Jsou to látky, u kterých lze ovlivnit vodivost elektrického proudu.</li>
+      <li>Jako polovodičové prvky označujeme Křemík(Si) a Germánium(Ge).</li>
+      <li>Vodivost lze ovlivňovat vnitřní strukturou polovodiče nebo vnějšími vlivy (elektrickým a magnetickým polem, teplem, světlem, …).</li>
+    </ul>
+
+    <h3>Energetický model atomu</h3>
+    <ul>
+      <li>Elektrony jsou v atomu uspořádány v energetických pásech.</li>
+      <li>Elektron musí mít energii odpovídající vodivostnímu pásu, aby mohl být použit k vedení proudu.</li>
+      <li>U vodičů sousedí Valenční pás s Vodivostním pásem nebo se dokonce překrývají.</li>
+      <li>U polovodičů se objevuje Zakázaný pás, tudíž je potřeba dodat elektronům energii k jeho překonání.</li>
+      <li>U izolantů je pás natolik velký, že je potřeba velkého množství energie k jeho překonání.</li>
+    </ul> 
+
+    <h3>Vlastní vodivost</h3>
+    <ul>
+      <li>Valenční elektrony vytvářejí elektronové páry se sousedními elektrony v krystalické mřížce (kovalentní vazba).</li>
+      <li>Pokud elektron dostane dostatečnou energii, tak se z vazby uvolní, a na jeho místě vznikne díra, která se chová jako kladně nabitá částice. </li>
+      <li>Na místo díry se přesune jiný elektron, po kterém zbyde díra a koloběh pokračuje, dokud je dodávaná dostatečná energie.</li>
+    </ul>
+
+    <h3>Příměsová vodivost</h3>
+    <ul>
+      <li>Příměsová vodivost vzniká, když se do čistého Křemíku nebo Germania přidá prvek s jiným počtem elektronů (z pravidla třímocný a pětimocný).</li>
+      <li>Pětimocné jsou Fosfor a Astat a třímocné jsou Bor, Galium a Iridium.</li>
+      <li>Pětimocný prvek zajišťuje elektronovou vodivost (typ N) a nazývá se Donor (dárce).</li>
+      <li>Třímocný prvek zajišťuje děrovou vodivost (typ P) a nazývá se Akceptor (příjemce).</li>
+      <li>Výhodou je, že elektrony nemusí překonávat celý zakázaný pás, aby se dostali do vodivostního pásu. </li>
+    </ul>
+    
+    <h3>Přechod PN</h3>
+    <ul>
+      <li>Vznikne spojením dvou polovodičů s odlišnými typy vodivosti.</li>
+      <li>Pokud polovodič typu P připojíme k zápornému pólu a polovodič typu N ke kladnému pólu díry jsou přitaženy k zápornému pólu a volné elektrony ke kladnému pólu. Mezi nimi je vyprázdněná oblast a obvodem neprochází žádný proud. Tento stav nazýváme Závěrný směr.</li>
+      <li>Pokud polovodič typu P připojíme ke kladnému pólu a polovodič typu N k zápornému pólu, tak díry a elektrony se začnou shlukovat na přechodu a obvodem začne procházet proud. Tento stav nazýváme Propustný směr. </li>
+    </ul>
+    
+    <h3>Dioda</h3>
+    <ul>
+      <li>Součástka s jedním přechodem PN. </li>
+      <li>Dioda jedním směrem propouští proud a druhým směrem ne.</li>
+    </ul>
+    
+    <h3>Usměrňovací dioda</h3>
+    <ul>
+      <li>Používá se k usměrnění proudu (přeměna ze střídavého na stejnosměrný proud) nebo k zamezení průchodu opačným směrem.</li>
+    </ul>
+    
+    <h3>Volt-ampérová charakteristika</h3>
+
+
+    <h3>Diferenciální odpor</h3>
+    <ul>
+      <li>Odpovídá sklonu voltampérové charakteristiky</li>
+      <li>Ideální dioda má nulový diferenciální odpor</li>
+    </ul>
+    
+    <h3>Usměrňovač</h3>
+    <ul>
+      <li>Zařízení sloužící k přeměně střídavého elektrického proudu na stejnosměrný.</li>
+      <li>Jednocestný – ořezává zápornou půlvlnu</li>
+      <li>Dvoucestný – překlápí zápornou vlnu na kladnou (využívá Grätzův můstek)</li>
+      <li>Pokud je připojen na výstup kondenzátor, tak je sníženo zvlnění výstupního napětí.</li>
+    </ul>
+    
+    <h3>Shottkyho dioda</h3>
+    <ul>
+      <li>Využívá usměrňujících účinků styku polovodiče a kovu</li>
+      <li>Polovodič: Křemík nebo GaAs typu N</li>
+      <li>Kov: zlato nebo hliník</li>
+      <li>+ menší napětí v propustném směru oproti usměrňovacím diodám</li>
+      <li>+krátká doba při přepnutí z vodivého do nevodivého stavu</li>
+      <li>+ jednoduchost výroby umožňuje výrobu s velmi malou plochou přechodu</li>
+      <li>-vyšší závěrný proud</li>
+      <li>Využívá se v extrémně rychlých obvodech, radarových zařízení a při usměrňování malých napětí s frekvencí až do desítek GHz.</li>
+    </ul>
+    
+    <h3>Stabilizační (Zenerova) dioda</h3>
+    <ul>
+      <li>Dioda má velmi tenký přechod PN a i při malém napětí v závěrném směru vzniká silné elektrické pole</li>
+      <li>Elektrony jsou vytrhávány z vazeb a přechod PN se stává vodivým i v závěrném směru</li>
+    </ul>
+    
+    <h3>Kapacitní dioda</h3>
+    <ul>
+      <li>V závěrném směru diody vzniká vyprázdněná oblast, která je umístěná mezi oblastmi s volnými nosiči elektrického náboje a toto uspořádání vytváří kondenzátor.</li>
+      <li>• Čím větší bude napětí v závěrném směru, tím větší bude šířka vyprázdněné oblasti.</li>
+      <li>Kapacitní dioda je vlastně kondenzátor řízený elektrickým napětím.</li>
+      <li>Kapacitní dioda se používá především v ladících obvodech přijímačů rádiových vln (rádio, televize), kde nahrazuje otočný kondenzátor  („ruční nastavování frekvence“).</li>
+    </ul>
+    
+    <h3>Hrotová dioda</h3>
+    <ul>
+      <li>V kovovém nebo skleněném pouzdře se nachází drátek, který se dotýká destičky z germania nebo křemíku.</li>
+      <li>Dioda má tak velmi malou plochu přechodu PN a tudíž i velmi malou kapacitu.</li>
+      <li>Výhodou je možnost použití u vysokých frekvencí, ale dioda má zase velký diferenciální odpor v propustném směru.</li>
+    </ul>
+    
+    <h3>Tranzistory</h3>
+    <ul>
+      <li>Tranzistor je polovodičová součástka se třemi vývody.</li>
+    </ul>
+    
+    <h3>Bipolární tranzistor</h3>
+    <ul>
+      <li>Má dva přechody PN, podle toho jaké dělíme na NPN PNP.</li>
+      <li>Má tři vývody kolektor, bázi a emitor.</li>
+    </ul>
+    
+    <h3>Tranzistorový jev</h3>
+    <ul>
+      <li> Malé napětí v bázi umožňuje průchod většího proudu mezi kolektorem a emitorem. Bez proudu na bázi by byl tranzistor uzavřen a mezi kolektorem a emitorem by neprocházel žádný proud.</li>
+    </ul>
+    
+    <h3>Voltampérová charakteristika</h3>
+
+    
+    <h3>Unipolární tranzistory</h3>
+    <ul>
+      <li>Jsou tranzistory řízené elektrostatickým polem, takže nepotřebují žádný řídící proud.</li>
+    </ul>
+    
+    <h3>J-FET </h3>
+    <ul>
+      <li>Při nulovém napětí na hradle je tranzistor otevřený se záporným napětím jsou z okolí Gatů vytlačovány volné elektrony a tranzistor se postupně zavírá.</li>
+      <li>Vývody jsou Source, Gate a Drain.</li>
+      <li>Přechod PN mezi Gatem je polarizován v závěrném směru, takže pro řízení není potřeba proud, jen elektrické pole.</li>
+      <li>Využití: zesilovače s malou spotřebou nebo snímací čipy v digitálních fotoaparátech</li>
+    </ul>
+    
+    <h3>MOSFET</h3>
+    <ul>
+      <li>Tranzistor s izolovaným hradlem.</li>
+      <li>Mezi Source a Drain prochází proud, po přivedení kladného napětí na Gate se elektrony přitáhnou a zvětší se tak proud, pokud ale přivedeme záporné napětí elektrony se odpudí až proud zmizí.</li>
+      <li>Jelikož je potřeba takřka nulový řídící proud, tranzistor má malou spotřebu.</li>
+      <li>Používá se jako základní prvek integrovaných obvodů. </li>
+    </ul>
+    
+    <h3>Diak</h3>
+    <ul>
+      <li>Třívrstvá spínací polovodičová součástka.</li>
+      <li>Při dosažení spínacího napětí, které je dáno při výrobě, se sepne.</li>
+      <li>Používá se jako pomocný spínací prvek s tyristorem a jako přepěťová ochrana.</li>
+    </ul>
+    
+    <h3>Tyristor</h3>
+    <ul>
+      <li>Čtyřvrstvá spínací polovodičová součástka. </li>
+      <li>Sepnutí je určeno velikostí proudu IG</li>
+      <li>Proud IG je konstantní a k sepnutí dojde zvýšením UAK.</li>
+      <li>Na tyristoru je konstantní napětí UAK a na řídící vstup je přiveden dostatečně velký proud IG.</li>
+      <li>Tyristor zůstane sepnutý, dokud IA neklesne pod hodnotu přídržného proudu.</li>
+      <li>Používá se pro spínání stejnosměrného proudu nebo jedné půlvlně střídavého proudu, dále v zapalovacích soustavách, stmívačích osvětlení, u řízení elektromotorů nebo u frekvenčních měničů.</li>
+    </ul>
+    
+    <h3>Triak</h3>
+    <ul>
+      <li>Spínací polovodičová součástka.</li>
+      <li>Umí spínat obě půlvlny střídavého proudu.</li>
+    </ul>
+    
+  </div>
+
+</body>
+</html> 

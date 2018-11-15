@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <title>Project X</title>
+</head>
+<body>
+  <div class="header">
+      <img src="obrazky/logo_sps.png" alt="Logo školy" height="50" width="50" align="left">
+      <h1 class="hlavickaText">Střední průmyslová škola Česká Lípa - Maturita</h1>
+  </div>
+
+  <div class="topnav">
+    <a class="active" href="main.html"><i class="fa fa-home"></i></a>
+    <a href="cj.html">ČJ</a>
+    <a href="cjr.html">ČJ - Rozbory</a>
+    <a href="mat.html">MAT</a>
+    <a href="mit.html">MIT</a>
+    <a href="asw.html">ASW</a>
+    <a href="ops.html">OPS</a>
+    <a href="pos.html">POS</a>
+    <a href="prg.html">PRG</a>
+    <a href="prg.html">AJ</a>
+  </div>
+
+	<div class="sidenav">
+      <a href="prg1.html">Algoritmizace</a>
+      <a href="prg2.html">Datové struktury</a>
+      <a href="prg3.html">Vývojové diagramy, UML</a>
+      <a href="prg4.html">Vyhledávací a třídící algoritmy</a>
+      <a href="prg5.html">Strukturované programování</a>
+      <a href="prg6.html">Objektově orientované programování</a>
+      <a href="prg7.html">Událostmi řízené programování</a>
+      <a href="prg8.html">Webové aplikace</a>
+  </div>
+
+	<div class="content">
+  	<h1>Řadící, třídící a vyhledávací algoritmy</h1>
+		
+    <h3>Proč se vyplatí zabývat se řadícími a třídícími algoritmy a jaké je jejich uplatnění?</h3>
+    <p></p>
+
+    <h3>Jak souvisí asymptotická složitost s řadícími algoritmy a strukturami které používají?</h3>
+    <p></p>
+
+    <h3>Co to jsou řadícími a třídícími algoritmy a jaký je mezi nimi rozdíl?</h3>
+    <p></p>
+
+    <h3>Popište společné vlastnosti řadících algoritmů (co je vstupem, výstupem a co je nutné k řazení).</h3>
+    <p></p>
+
+    <h3>K čemu se při řazení používá klíč, a jaké druhy řazení dle typu klíče můžeme rozlišovat?</h3>
+    <p></p>
+
+    <h3>Jaké rozlišujeme typy řazení podle výsledného pořadí položek?</h3>
+    <p></p>
+
+    <h3>Jaké faktory (vlivy) působí na celkovou rychlost řazení položek?</h3>
+    <p></p>
+
+    <h3>Jak volba algoritmu ovlivňuje rychlost řazení?</h3>
+    <p></p>
+
+    <h3>Jaké vlastnosti řazeného souboru hodnot mohou ovlivňovat celkovou rychlost řazení?</h3>
+    <p></p>
+
+    <h3>Jak volba datové struktury ovlivňuje rychlost řazení (uveďte příklady)?</h3>
+    <p></p>
+
+    <h3>Jaké parametry fyzického zařízení (hardware) provádějícího řazení ovlivňují celkovou rychlost řazení?</h3>
+    <p></p>
+
+    <h3>Kolik pracovní paměti potřebují různé typy řadících algoritmů a to to jsou „in-place“ algoritmy?</h3>
+    <p></p>
+
+    <h3>Čím se od sebe liší rekurzivní a iterativní implementace řadícího algoritmu?</h3>
+    <p></p>
+
+    <h3>Popište, jak funguje a čím se od sebe liší přímé a nepřímé porovnávání (uveďte příklad)?</h3>
+    <p></p>
+
+    <h3>Jakou vlastnost řadícího algoritmu popisuje paralelizace, jak funguje a jaká je její výhoda?</h3>
+    <p></p>
+
+    <h3>S jakými typy výpočetní složitosti se setkáváme u řadících algoritmů a jak je označujeme?</h3>
+    <p></p>
+
+    <h3>Uveďte konkrétní příklady tříd složitostí, se kterými se lze běžně setkat u řadících algoritmů.</h3>
+    <p></p>
+
+    <h3>Co může ovlivňovat složitost prohození položek v paměti?</h3>
+    <p></p>
+
+    <h3>Jakou vlastnost řadících algoritmů popisuje stabilita?</h3>
+    <p></p>
+
+    <h3>Uveďte alespoň čtyři různé metody používané řadícími algoritmy pro realizaci řazení.</h3>
+    <p></p>
+
+    <h3>Jakou vlastnost má Adaptive sort (popište a vysvětlete).</h3>
+    <p></p>
+
+    <h3>Jaká podmínka musí platit, pokud zjišťujeme, zda je pole nebo seznam seřazené?</h3>
+    <p></p>
+
+    <h3>Uveďte postup (algoritmus) jakým zjistíme, zda je pole nebo seznam seřazené?</h3>
+    <p></p>
+
+    <h3>Popište tři různé způsoby, pomocí kterých lze provést prohození dvou hodnot v paměti.</h3>
+    <p></p>
+
+    <h3>Bubble sort (princip [průchod, setřídění], výsledek, omezení, vylepšení).</h3>
+    <p>Princip - opakovaná záměna pozičně sousedních položek ve tříděném vstupu. Zaměnované položky jsou vždy na pozicích i a I+1 nebo I a I-1
+        Průchod - pro každou sousedící dvojici položek je postupně provedena záměna. Nutnost záměny je daná podmínkou pro požadovanou seřazenost položek.
+        Setřídění - provést n-krát průchod(n-1 porovnání) - náročnost -0( n^2)
+    Výsledek - hodnoty podle své velikosti postupně "probublávají" na novou pozici. Po "probublání" všech hodnot jsou hodnoty na pozicích splňujících seřazení.
+    Omezení -  velké hodnoty na jednu stranu posloupnosti probublávají rychleji něž malé na druhou.
+    Vylepšení - když v průchodu nedojde ani k jednomu prohození.</p>
+
+    <h3>Selection sort (princip [průchod, setřídění, porovnání], výsledek, omezení, výhoda a nevýhoda).</h3>
+    <p>Princip -
+    Výsledek -
+    Omezení - 
+    +
+    -</p>
+
+    <h3>Insertion sort (princip [průchod, setřídění, porovnání], výsledek, výhoda a nevýhoda)</h3>
+    <p>Princip -
+    Výsledek -
+    Omezení - 
+    +
+    -</p>
+
+    <h3>Shell sort (princip, implementace a popis úrovní, výsledek, ideální krok, výhoda a nevýhoda)</h3>
+    <p>Princip -
+    Výsledek -
+    Omezení - 
+    +
+    -</p>
+
+    <h3>Counting sort (předpoklad, implementace, princip, výsledek, výhoda a nevýhoda)</h3>
+    <p>Princip -
+    Výsledek -
+    Omezení - 
+    +
+    -</p>
+
+    <h3>Radix sort (popis, pojmy [číslo, číslice, řád, hodnota, soustava], princip, výsledek, výhoda a nevýhoda).</h3>
+    <p>Princip -
+    Výsledek -
+    Omezení - 
+    +
+    -</p>
+
+    <h3>Merge sort (popis, implementace, princip, výsledek, analýza složitosti, výhoda a nevýhoda, uplatnění).</h3>
+    <p>Princip -
+    Výsledek -
+    Omezení - 
+    +
+    -</p>
+
+    <h3>Quick sort (popis, princip, implementace, výsledek, analýza složitosti, výhoda a nevýhoda)</h3>
+    <p>Princip -
+    Výsledek -
+    Omezení - 
+    +
+    -</p>
+
+    <h3>Heap sort (popis, princip, implementace, výsledek, analýza složitosti, výhoda a nevýhoda)</h3>
+    <p>Princip -
+    Výsledek -
+    Omezení - 
+    +
+    -</p>
+
+    <h3>Co je vstupem a co výstupem u vyhledávacích algoritmů?</h3>
+    <p></p>
+
+    <h3>Uveďte vlastnosti algoritmů pro virtuální vyhledávací prostory (popis, cíl, vstup, klíč, výstup, příklady).</h3>
+    <p></p>
+
+    <h3>Vyhledávací algoritmy pro pod-strukturu zadané struktury (popis, vstup, klíč, výstup, příklady).</h3>
+    <p></p>
+
+    <h3>Jaké datové struktury lze prohledávat algoritmy (přímé, lineární a grafové) - příklady?</h3>
+    <p></p>
+
+    <h3>Popište princip lineárního, binárního a interpolačního vyhledávání.</h3>
+    <p></p>
+	</div>
+
+</body>
+</html> 

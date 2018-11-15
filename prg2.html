@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <title>Project X</title>
+</head>
+<body>
+  <div class="header">
+      <img src="obrazky/logo_sps.png" alt="Logo školy" height="50" width="50" align="left">
+      <h1 class="hlavickaText">Střední průmyslová škola Česká Lípa - Maturita</h1>
+  </div>
+
+  <div class="topnav">
+    <a class="active" href="main.html"><i class="fa fa-home"></i></a>
+    <a href="cj.html">ČJ</a>
+    <a href="cjr.html">ČJ - Rozbory</a>
+    <a href="mat.html">MAT</a>
+    <a href="mit.html">MIT</a>
+    <a href="asw.html">ASW</a>
+    <a href="ops.html">OPS</a>
+    <a href="pos.html">POS</a>
+    <a href="prg.html">PRG</a>
+    <a href="aj.html">AJ</a>
+  </div>
+
+	<div class="sidenav">
+      <a href="prg1.html">Algoritmizace</a>
+      <a href="prg2.html">Datové struktury</a>
+      <a href="prg3.html">Vývojové diagramy, UML</a>
+      <a href="prg4.html">Vyhledávací a třídící algoritmy</a>
+      <a href="prg5.html">Strukturované programování</a>
+      <a href="prg6.html">Objektově orientované programování</a>
+      <a href="prg7.html">Událostmi řízené programování</a>
+      <a href="prg8.html">Webové aplikace</a>
+  </div>
+
+	<div class="content">
+    <h1>Datové struktury</h1>
+
+    <h3>Co to jsou datové struktury?</h3>
+    <p>Datové struktury se zabývají uložením hodnot, jejich strukturováním a další práci s nimi(vkládání, odstraňování a vyhledávání). Jsou to soubory či množiny dat.</p>
+
+    <h3>Proč je navrhujeme a používáme datové struktury a jaký je jejich význam?</h3>
+    <p>K uspořádávání dat tak aby mohla být používaná efektivně algoritmy. Výsledkem jsou rychlejší operace s daty a s nižšími nároky na paměť.</p>
+
+    <h3>Co to je ADT (abstract data type)?</h3>
+    <p> Abstraktní datová struktura je způsob, jak efektivně uložit libovolná data tak, aby práce s nimi byla efektivní. Je to abstraktní skladiště pro data pro kterou je definovaná množina operací. každá operace má výpočetní složitost pro své vykonání, bez ohledu na implementaci v konkrétní datové struktuře.</p>
+
+    <h3>V jakých oblastech naleznou uplatnění ADT a z nich vycházející datové struktury?</h3>
+    <p>Protože některé abstraktní datové typy jsou velmi užitečné a běžně používané, některé programovací jazyky používají tyto ADT jako primitivní datové typy, které jsou přidány do jejich knihoven. Důvodem je že se lépe implementují algoritmy. Například v Perlu je možné pole považovat za implementaci seznamu, standardní knihovny C++ a Javy zase nabízejí implementaci seznamu, zásobníku, fronty a řetězců.</p>
+
+    <h3>Z čeho se skládá paměť počítače?</h3>
+    <p>TPamět je data s adresovatelné položky.</p>
+
+    <h3>Co to jsou primární, sekundární a terciální paměti?</h3>
+    <p>Primární pamět je vnitřní pamět - RAM, Cache nebo registry procesoru.</br>
+       Sekundární pamět je vnější pamět - pevný disk</br>
+       Terciaální je také vnější - CD, DVD... </p>
+
+    <h3>Co to je adresa bajtu v operační paměti a jak s ní souvisí ukazatel?</h3>
+    <p>Adresa bajtu udává umístění Bajtu v paměti jako celé číslo Bajtu od začátku paměti. Program může uložit libovolná data na libovolnou adresu v paměti. Oprávnění k přístupům a k částem paměti kontroluje OS.</p>
+
+    <h3>Vysvětlete principy fyzického a logického uspořádání používaného v datových strukturách.</h3>
+    <p>Princip fyzického uspořádání je výpočet adresy v paměti, kde jsou data uložena. Využívá aritmetických operací jako +, =, *, /</br>
+    Princip logického uspořádáníje že položkynjsou propojovány pomocí odkazů - ukazovatelu. Pro nalazení položky je nutné procházet datovou strukturu přes odkazy</p>
+
+    <h3>Co to jsou primitivní datové typy?</h3>
+    <p>Obecně jsou to jednoduché struktury.</p>
+
+    <h3>Popište alespoň čtyři primitivní datové typy a uveďte jejich typickou datovou velikost.</h3>
+    <p>Boolean(bool) - logická hodnota, rozlišuje pouze 0/1(false/true) datová velikost je 1b ale zabírá celý 1B.</br>
+       Byte, integer(int) -zapisuje celá čísla kladná i záporná. Zabíra 1B - 4B.</br>
+       Character(char) - zapisuje jeden znak(ASCII, UTF-8, cp1250). Zabírá 1B - 4B.</br>
+       Floating point(float) - jsou reálná čísla s desetinou čárkou a zabírá okolo 4B.
+       </p>
+
+    <h3>Co to jsou složené datové typy?</h3>
+    <p>Složené datové typy obsahují více prvků.</p>
+
+    <h3>Uveďte a stručně popište alespoň dva složené datové typy.</h3>
+    <p>Pole (array) – [21, -5, 11], může být vícerozměrné (např. dvourozměrné označujeme jako matici).</br>
+    Seznam (list) – obdoba pole, ['a', 'b', 9, „řetězec“]. Na rozdíl od pole nelze seznam přímo adresovat pomocí indexu.</p>
+
+    <h3>Proč se používají složené a abstraktní datové typy?</h3>
+    <p>Uchovájí hodnotu jekékoliv definice datových typů.</p>
+
+    <h3>Co může být položkou uloženou v abstraktním datovém typu (alespoň dva typy položek)?</h3>
+    <p>Jednoduchý - celé číslo</br>
+       Obecný datový typ - graf, fronty</p>
+
+    <h3>Jak je vytvářen (implementován) abstraktní datový typ?</h3>
+    <p>Realizace využitím zvoleného ADT nebo jejich kombinace.</p>
+
+    <h3>Co definuje výčtový typ a jaké je jeho použití?</h3>
+    <p>Definuje pevně zadanou množinu hodnot a hodnoty se v výčtovém typu neopakují, nemusí být daná pořadí hodnot</p>
+
+    <h3>Jaká je výhoda a nevýhoda použití výčtového typu v programu?</h3>
+    <p>+ ve zdrojovém kódu zastoupeny svímy názvy</br>
+       - hodnoty uloženy jako celá čísla.</p>
+
+    <h3>Co uchovává množina a jaké je její použití?</h3>
+    <p>Ve množinách pořadí datových položek nemá žádnou posloupnost, ale duplicitní prvky nejsou povoleny. Příklady operací na množinách jsou přidávání a odstraňování prvků a vyhledávání prvku ve množině. Některé jazyky přímo podporují množiny. V jiných množiny můžou být implementovány pomocí hašovací tabulky s umělými hodnotami, tj. pro reprezentování množiny jsou používány pouze klíče.</p>
+
+    <h3>Co a jakým způsobem uchovává pole a jakou vlastnost má jeho velikost?</h3>
+    <p>Pojmem pole (také vektor) se v informatice označuje datová struktura, která sdružuje daný vždy konečný počet prvků (čísel, textových řetězců, …) stejného datového typu. K jednotlivým prvkům pole se přistupuje pomocí jejich indexu (celého čísla, označujícího pořadí prvku). Velikost pole zůstává při běhu programu neměnná (některé programovací jazyky toto omezení nekladou, zvětšení pole je ale časově náročná operace).</p>
+
+    <h3>Jak se přistupuje k položkám pole?</h3>
+    <p>Zpřístupňuje se pomocí celočíselných indexů.</p>
+
+    <h3>Jaká je výhoda a nevýhoda použití pole v programu?</h3>
+    <p>+ hledání položky pomocí celočíselného indexu je velmi rychlé</br>
+       - pevná velikost pole a tedy nutno paměť vyhradit předem</p>
+
+    <h3>Které typy algoritmů mohou použít výhody polí?</h3>
+    <p>Záznam, seznam, seskupení...</p>
+
+    <h3>Záznam – co uchovává, jak určíme velikost, jak se pracuje s položkami, použití, výhoda a nevýhoda.</h3>
+    <p>Záznam umožňuje uchovat více položek různého datového typu. Je dán pevný počet a jejich pořadí. K položkám (fields nebo members) přistupujeme podle jejich jména.</p>
+
+    <h3>Seznam – co uchovává, jak určíme velikost, jak se pracuje s položkami, použití, výhoda a nevýhoda.</h3>
+    <p>Seznam umožňuje uchovat položky a znát přitom jejich pořadí pro manipulaci. </br>
+
+    Konečný seznam není omezený a hodnota se může vyskytovat vícekrát. Libovolnou položku je možno vytvořit, vložit, vyjmout, odstranit či seřadit. </br>
+
+    Spojový seznam může být jednosměrný, obousměrný, lineární či kruhový.</p>
+
+    <h3>N-tice – co uchovává, význam, jak se pracuje s položkami, použití.</h3>
+    <p>Uchovává konečný počet položek v daném pořadí. Položka může být další n-tice.</br>
+       Význam - jeden ze základních datových typů pro funkcionální programovací jazyky. Jakoukoliv -tici lze složit pomocí uspořádáné dvojice.</br>
+       Položka - může být jakékoliv datového typu a je k ní přístupováno pomocí indexu.</p>
+
+    <h3>Seskupení (union) – co uchovává, velikost, typy, použití, výhoda a nevýhoda.</h3>
+    <p>Uchovává - na jednom pamětovém místě uchovat hodnoty různých datových typů. V jednom okamžiku může uchovat jen jednu hodnotu jednoho datového typy.</br>
+    Velikost - dle definovaného datového typu + případně navýšena o velikost indikace akt. používaného typu.</br>
+    Typy - untaged a tagged</br>
+    Použití - Proměnná uchovávajicí hodnotu takódovanou v různých datových typech.</br>
+    + efektivně využití dostupné paměti oproti klasickému záznamu</br>
+    - nižší výkon oproti běžné proměnné, uchovávajicí hodnotu jen jendoho typu</p>
+
+    <h3>Slovník – co uchovává, položky, velikost, typy, použití, výhoda a nevýhoda.</h3>
+    <p>Slovník vzniká při práci s daty typu klíč-hodnota. S každou položkou můžeme provádět přidání, odstranění, vyhledávání a nahrazení. </br>
+    Např. katalogy pojmů či překlady. </p>
+
+    <h3>Co to je hash tabulka a hash funkce a jak spolu souvisí?</h3>
+    <p>Hashovací tabulka, nebo také tabulka s rozptýlenými hodnotami, popř. dokonce hašovací tabulka, je podobně jako binární vyhledávací strom datová struktura optimalizovaná pro potřeby rychlého vyhledávání.</p>
+    <p>Hašovací funkce je matematická funkce (resp. algoritmus) pro převod vstupních dat do (relativně) malého čísla. Výstup hašovací funkce se označuje výtah, miniatura, otisk, fingerprint či hash (česky též někdy jako haš).</p>
+    <p>Rozdílem je že hash tabulka využívá hash funkce a tato tabulka se skládá s tšchto funkcí.</p>
+
+    <h3>Graf – co uchovává, položky, velikost, typy, použití, výhoda a nevýhoda.</h3>
+    <p>Graf umožňuje propojit objekty vazbami.</br>
+
+    Graf má dvě části, vrcholy (nodes) - hodnoty a jejich údaje uložené v grafu - a hrany </br>
+     (edges) - propojení vždy dvou uzlů. </br>
+
+    Grafy lze rozdělit na jednoduché neorientované (není určen směr hran), směrové </br>orientované (je určen směr hran), vážený graf (hrany mají různou váhu, která popisuje </br>propojení) anebo multigraf (více hran, které propojují stejné vrcholy; hrana může</br> začínat a končit ve stejném vrcholu).</br>
+
+    Např. pro grafickou vizualizaci, tj. naměření či získání hodnot, průběh funkce anebo </br>pro nalezení vzájemných vztahů mezi objekty.</p>
+
+    <h3>Strom – jakou musí mít vlastnost oproti grafu, kde nalezne strom využití?</h3>
+    <p>Strom je datová struktura uchovávající hodnoty a jejich vzájemnou hierarchii. </br>
+
+    Jedná se o specifický graf, kde každý vrchol může mít pouze odlišného rodiče či potomka. </br>
+
+    Binární strom je speciální typ, kde každý vrchol může mít maximálně dva potomky a je využíván pro rychlé nalezení hodnoty.</p>
+
+    <h3>Jakými třemi způsoby lze reprezentovat datovou strukturu graf v paměti počítače?</h3>
+    <p>Matice incidence</br>
+      Dynamická prezentace</br>
+      Matice souvislosti</p>
+
+    <h3>Halda – popis, co uchovává, co musí splňovat, typy, význam, použití, binární (úplná a vyvážená).</h3>
+    <p>Jendá se o strom, který splňuje min a max heap(požadavky na haldu).</br>
+     Uchovává položky v podobě vrcholů.</p>
+
+    <h3>Fronta – co uchovává, popis, položka, FIFO, typy, význam, použití, realizace (implementace).</h3>
+    <p>Fronta je abstraktní datová struktura pro uchovávání hodnot s libovolným datovým typem. </br>
+
+    Využívá se FIFO (FI = první dovnitř; FO = první ven) paměť. </br>
+
+    Např. když je rychlost zpracování položek pomalejší než rychlost příjmu nových položek. </br>
+
+    Např. tisková fronta, uložení velkého množství zpráv pro pozdější zpracování či synchronizaci.</p>
+
+    <h3>Zásobník – co uchovává, popis, položka, LIFO, typy, význam, použití, realizace (implementace).</h3>
+    <p>
+      Odebíráme data v opacném pořadí, než v jakém jsme je do nej uložili. </br>
+      Pracovat lze pouze s prvkem, který je na vrcholu zásobníku. </br>
+      Reprezentuje model LIFO (Last In - First Out).
+    </p>
+    <p>
+      Model zásobníku např. batoh. </br>
+      Vyndaváme z nej věci v opačném pořadí, než je do nej ukládáme. </br>
+      Použití při sekvencním zpracovávání dat. </br>
+    </p>
+    <p> 
+      Dno zásobníku: </br>
+      Nejspodnejší prvek v zásobníku.  </br>
+      Přidán do zásobníku jako první. </br>
+    </p>
+    <p>
+      Vrchol zásobníku: </br>
+      Nejvrchnejší prvek v zásobníku.  </br>
+      Přidán do zásobníku jako poslední
+    </p>
+
+    <h3>Objekt – co uchovává, popis, význam, použití, typy</h3>
+    <p>Uchovává informaci i způsob jak s nimi pracovat(algoritmus)</br>
+    Popis objektu je stav objektu, uložená infor. jednoznačně idenfikuje daný objekt. Data(údaje uložené v datových polích).</br>
+    Datové pole může být libovolného typu.</br>
+    Význam - objektem může být datová struktura, funkce nebo metoda.</br>
+    Použití - Obsahují jak data(stav objektu) tak jejich chování(metody)</p>
+
+    <h3>Podpora datových struktur v programovacích jazycích (úrovně, jazyky, uložení hodnoty, dat. typy).</h3>
+    <p>Nízko urovňové</br>
+    Podpora - chybí</br>
+    Základní typy - binární hodnota</br>
+    Složený typ - bitový řetezec o různě pevně dané dělce</br>
+    Uložené hodnoty - registry, páry registrů</p>
+    <p>Nižší jazyky </br>
+    Podpora - pole a záznam</br>
+    Základní typy - celá čísla, text. řetězce, pole a záznam</br>
+    Složený typ - uložení, proměná</p>
+    <p>Vyšší jazyky: Pascal, C++, PHP</br>
+    Podpora - stejná jako nižší + C++ má STL</br>
+    Základní typy - celé číslo, des. číslo, znak, text. řetězec, pole a záznam</br>
+    Složený typ - objekt třídy</br>
+    Uložení hodnoty - objekty a promněnné</p>
+    <p>Vysoko úrovňové</br>
+    Podpora - plná podpora ADT, .NET framework, Java Collection framework...</br>
+    Základní typy - objekt</br>
+    Složený typ - kontejnér(pole zázsobník, fronta..)</br>
+    Uložení hodnoty - kontejnery a objekty</p>
+
+	</div>
+
+</body>
+</html> 
